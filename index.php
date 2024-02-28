@@ -1,7 +1,7 @@
 <?php
 
 // IMPORTO CATEGORIE
-require_once __DIR__ . '/Categories.php';
+require_once __DIR__ . '/database/Categories.php';
 
 // METTO TUTTO IN UN SINGOLO ARRAY
 $category_animals = array($cane, $gatto, $uccelli, $pesci);
@@ -16,9 +16,9 @@ $category_animals = array($cane, $gatto, $uccelli, $pesci);
     <div class="container">
         <table class="table">
             <!-- THEAD -->
-            <?php include __DIR__ . '/thead.php' ?>
+            <?php include __DIR__ . '/template_table/thead.php' ?>
             <!-- TBODY -->
-            <?php require __DIR__ . '/tbody.php' ?>
+            <?php require __DIR__ . '/template_table/tbody.php' ?>
         </table>
     </div>
 </body>
